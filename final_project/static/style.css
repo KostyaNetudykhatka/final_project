@@ -1,0 +1,81 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 15px 0;
+    text-align: center;
+}
+
+header nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+main {
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 20px;
+    background: white;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.add-book-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 400px;
+    margin-bottom: 30px;
+}
+
+.add-book-form input, .add-book-form textarea {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.button, button {
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 4px;
+    display: inline-block;
+}
+
+.button.delete {
+    background-color: #dc3545;
+}
+
+.books-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.book-card {
+    border: 1px solid #ddd;
+    padding: 15px;
+    text-align: center;
+    border-radius: 5px;
+    background: #fff;
+}
+
+.small-img {
+    max-width: 100px;
+    height: auto;
+}
+
+.large-img {
+    max-width: 300px;
+    height: auto;
+}
